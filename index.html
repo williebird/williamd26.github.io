@@ -15,19 +15,19 @@
 
 </form>
 <a href="requestaccess.html">Request Access</a>
-<script language="javascript">
-function check(form)
-{
- 
- if(form.userid.value == "subscribe" && form.pswrd.value == "dewclarke")
- {
-   window.open('https://www.youtube.com/c/dewclarke?sub_confirmation=1')
- }
-else
-{
-  alert("Please subscribe to my channel for more coding!")
- }
-}
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCaPCY84XfxtqeaczvpJ8l4e24k6zLVs10",
+    authDomain: "html-7ea99.firebaseapp.com",
+    databaseURL: "https://html-7ea99.firebaseio.com",
+    projectId: "html-7ea99",
+    storageBucket: "html-7ea99.appspot.com",
+    messagingSenderId: "1054356910269"
+  };
+  firebase.initializeApp(config);
 </script>
   </body>
 </html>
